@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Barlow+Condensed:wght@300&family=Barlow:wght@100;400&family=Forum&family=Gugi&family=Kumbh+Sans:wght@400;700&family=Mulish:wght@200&family=Orbitron&family=Oxygen:wght@300&family=Poppins:wght@500&family=Raleway:wght@600&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono&family=Unica+One&family=Vollkorn&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7fdb00945.js" crossorigin="anonymous"></script>
+    <title>API Weather</title>
+</head>
+
+<body>
+
+    <img src="images/rainy2.jpg" alt="img">
+
+    <div class="container">
+
+        <div class="row1">
+            <input type="text" id="myInput" autocomplete="off" placeholder="City" value="paris">
+            <button>Check</button>
+            <span id="errorMsg"></span>
+        </div>
+
+        <div class="row2">
+            <div id="nomVille"><span id="cityName"></span></div>
+            <div id="temperature"><i class="fas fa-temperature-high"></i><span id="cityTemperature"></span></div>
+            <div id="humidity"><i class="fas fa-tint"></i><span id="cityHumidity"></span></div>
+            <div id="wind"><i class="fas fa-wind"></i><span id="cityWind"></span></div>
+        </div>
+
+        <div class="row3"><i class="fas fa-cloud"></i>Meteo</div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

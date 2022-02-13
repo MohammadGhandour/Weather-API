@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: roboto;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+
+    input {
+        width: 100%;
+        height: 30px;
+        outline: 0;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+
+    button {
+        width: 100%;
+        border: none;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #00baf3;
+        color: #eee;
+        font-size: 1.2rem;
+        margin-top: 5px;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: darken($color: #00baf3, $amount: 10);
+        }
+    }
+
+    #errorMsg{
+        text-align: left;
+        color: #eee;
+        background-color: red;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 40px 0;
+    color: #eee;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        aspect-ratio: 1;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 1.5rem;
+
+        i {
+            margin-bottom: 10px;
+        }
+    }
+
+    #nomVille{
+        background-color: rgba($color: #00baf3, $alpha: 0.8);
+    }
+
+    #temperature{
+        background-color: rgba($color: #555, $alpha: 0.8);
+    }
+
+    #humidity{
+        background-color: rgba($color: rgb(0, 78, 196), $alpha: 0.8);
+    }
+
+    #wind{
+        background-color: rgba($color: rgb(102, 102, 102), $alpha: 0.8);
+    }
+}
+
+.row3 {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    color: #eee;
+    font-size: 2.5rem;
+    margin: auto;
+
+    i {
+        margin-right: 20px;
+    }
+}

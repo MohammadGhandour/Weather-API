@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: roboto;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  position: relative;
+}
+
+.row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 300px;
+}
+
+.row1 input {
+  width: 100%;
+  height: 30px;
+  outline: 0;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.row1 button {
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #00baf3;
+  color: #eee;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.row1 button:hover {
+  background-color: #0093c0;
+}
+
+.row1 #errorMsg {
+  text-align: left;
+  color: #eee;
+  background-color: red;
+  border-radius: 0 0 5px 5px;
+}
+
+.row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 300px;
+  margin: 40px 0;
+  color: #eee;
+}
+
+.row2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  aspect-ratio: 1;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.row2 div i {
+  margin-bottom: 10px;
+}
+
+.row2 #nomVille {
+  background-color: rgba(0, 186, 243, 0.8);
+}
+
+.row2 #temperature {
+  background-color: rgba(85, 85, 85, 0.8);
+}
+
+.row2 #humidity {
+  background-color: rgba(0, 78, 196, 0.8);
+}
+
+.row2 #wind {
+  background-color: rgba(102, 102, 102, 0.8);
+}
+
+.row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  color: #eee;
+  font-size: 2.5rem;
+  margin: auto;
+}
+
+.row3 i {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=style.css.map */
